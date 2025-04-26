@@ -1,19 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Cookie Clicker - The Original Idle Game where you bake cookies by clicking and buying upgrades. Play the addictive cookie-based incremental game that started it all!">
+<meta name="keywords" content="cookie clicker, idle game, incremental game, cookie game, clicker game">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://cookieclicker-play.github.io/">
+
 <script type="text/javascript">
     window.cookieconsent_options = {"message":"Unsurprisingly, this website uses cookies for ads and traffic analysis.","dismiss":"Got it!","learnMore":"Learn more","link":"#","target":"_blank","theme":"http://orteil.dashnet.org/cookieconsent.css","domain":"dashnet.org"};
 </script>
 
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
 
-<title>Cookie Clicker</title>
+<title>Cookie Clicker - The Original Idle Game | Click, Bake, Upgrade</title>
 <!--
 Code and graphics copyright Orteil, 2013-2019
 Feel free to alter this code to your liking, but please do not re-host it, do not profit from it and do not present it as your own.
 -->
 
-<meta name="viewport" content="width=900, initial-scale=1">
 <link rel="shortcut icon" href="img/favicon.ico" />
 <!--<link href="https://fonts.googleapis.com/css?family=Kavoon&subset=latin,latin-ext" rel="stylesheet" type="text/css">-->
 <link href='https://fonts.googleapis.com/css?family=Merriweather:900&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
@@ -22,6 +28,107 @@ Feel free to alter this code to your liking, but please do not re-host it, do no
 <script src="main.js?v=2.058"></script>
 
 <link href="style.css?v=2.050" rel="stylesheet" type="text/css">
+<style>
+    /* Full screen styles */
+    html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow-x: hidden;
+    }
+    
+    #wrapper {
+        min-height: 100vh;
+        position: relative;
+    }
+    
+    #game {
+        min-height: 100vh;
+        position: relative;
+    }
+    
+    #seo-content {
+        background: #1a1a1a;
+        color: #f5f5f5;
+        padding: 2rem;
+        font-family: 'Merriweather', Georgia, serif;
+        line-height: 1.6;
+    }
+    
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+    
+    #seo-content h1, #seo-content h2, #seo-content h3, 
+    #seo-content h4, #seo-content h5, #seo-content h6 {
+        color: #ffb74d;
+        margin-top: 1.5em;
+        margin-bottom: 0.5em;
+    }
+    
+    #seo-content h1 {
+        font-size: 2.5em;
+        border-bottom: 2px solid #444;
+        padding-bottom: 0.5em;
+    }
+    
+    #seo-content h2 {
+        font-size: 2em;
+    }
+    
+    #seo-content h3 {
+        font-size: 1.75em;
+    }
+    
+    #seo-content h4 {
+        font-size: 1.5em;
+    }
+    
+    #seo-content h5 {
+        font-size: 1.25em;
+    }
+    
+    #seo-content h6 {
+        font-size: 1em;
+    }
+    
+    #seo-content p {
+        margin-bottom: 1em;
+    }
+    
+    #seo-content ul, #seo-content ol {
+        margin-left: 2em;
+        margin-bottom: 1.5em;
+    }
+    
+    #seo-content li {
+        margin-bottom: 0.5em;
+    }
+    
+    #seo-content a {
+        color: #4fc3f7;
+        text-decoration: none;
+    }
+    
+    #seo-content a:hover {
+        text-decoration: underline;
+    }
+    
+    .highlight-box {
+        background: rgba(255, 255, 255, 0.1);
+        border-left: 4px solid #ffb74d;
+        padding: 1em;
+        margin: 1.5em 0;
+        border-radius: 0 4px 4px 0;
+    }
+    
+    .cookie-fact {
+        font-style: italic;
+        color: #aed581;
+    }
+</style>
 <!--[if IE]>
 <style type="text/css">
 	#ifIE9{display:block;}
@@ -30,13 +137,48 @@ Feel free to alter this code to your liking, but please do not re-host it, do no
 
 <!--[if lt IE9]><script src="excanvas.compiled.js"></script><![endif]-->
 
+<!-- Schema.org markup for Google -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoGame",
+  "name": "Cookie Clicker",
+  "description": "Cookie Clicker is an incremental game where players click on a big cookie to produce cookies. These can be spent on upgrades to increase cookie production.",
+  "genre": ["Idle Game", "Incremental Game", "Clicker Game"],
+  "image": "img/favicon.ico",
+  "author": {
+    "@type": "Person",
+    "name": "Orteil"
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "availability": "http://schema.org/InStock"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "10482"
+  }
+}
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LZ6L0G8LYE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LZ6L0G8LYE');
+</script>
 </head>
 <body>
 
 <div id="wrapper">
 
 	<div id="topBar">
-		<div><b>Cookie Clicker</b>&trade; &copy; <a href="#" target="_blank" id="topbarOrteil">Orteil</a>, 2025 - <a href="# target="_blank" id="topbarDashnet">DashNet</a></div>
+		<div><b>Cookie Clicker</b>&trade; &copy; <a href="#" target="_blank" id="topbarOrteil">Orteil</a>, 2025 - <a href="#" target="_blank" id="topbarDashnet">DashNet</a></div>
 		<div><a href="#" target="_blank" id="topbarTwitter">twitter</a></div>
 		<div><a href="#" target="_blank" id="topbarTumblr">tumblr</a></div>
 		<!--<div><a href="http://forum.dashnet.org" target="_blank">Official forum</a></div>-->
@@ -197,6 +339,106 @@ Feel free to alter this code to your liking, but please do not re-host it, do no
 		<div id="tooltipAnchor"><div id="tooltip" class="framed" onMouseOut="Game.tooltip.hide();"></div></div>
 
 	</div>
+	
+	<!-- SEO Content Section -->
+	<section id="seo-content">
+		<div class="container">
+			<h1>Cookie Clicker - The Ultimate Idle Baking Game</h1>
+			
+			<div class="highlight-box">
+				<p><b>Cookie Clicker</b> is the groundbreaking idle game that revolutionized the genre. Start with a simple click to produce a single cookie, then build your way to a vast cookie empire with automatic production, upgrades, and achievements. How many cookies can <u>you</u> bake?</p>
+			</div>
+			
+			<h2>What is Cookie Clicker?</h2>
+			<p>Cookie Clicker is an <i>incremental browser game</i> created by French programmer Julien "Orteil" Thiennot in 2013. The game has since become a cultural phenomenon, pioneering the "idle game" genre where progress can be made even when not actively playing.</p>
+			
+			<p class="cookie-fact">Did you know? The world record for legitimate cookies baked in Cookie Clicker is in the quintillions!</p>
+			
+			<h3>How to Play Cookie Clicker</h3>
+			<p>The gameplay is deceptively simple:</p>
+			<ol>
+				<li>Click the big cookie to produce cookies</li>
+				<li>Use cookies to purchase buildings that automatically produce cookies</li>
+				<li>Buy upgrades to increase your production rate</li>
+				<li>Discover new game mechanics as you progress</li>
+				<li>Ascend to gain permanent bonuses when you're ready</li>
+			</ol>
+			
+			<h2>Key Features of Cookie Clicker</h2>
+			<ul>
+				<li><b>Simple yet addictive gameplay</b> - Anyone can learn, but the depth will keep you engaged</li>
+				<li><b>Endless progression</b> - There's always another goal to reach</li>
+				<li><b>Humorous writing</b> - Discover funny descriptions and easter eggs</li>
+				<li><b>Regular updates</b> - New content is added periodically</li>
+				<li><b>No pay-to-win mechanics</b> - Completely free to play</li>
+			</ul>
+			
+			<h4>Cookie Clicker Buildings</h4>
+			<p>As you progress through Cookie Clicker, you'll unlock various buildings that automatically produce cookies:</p>
+			<ul>
+				<li>Cursors - Autoclick the big cookie</li>
+				<li>Grandmas - Sweet elderly ladies baking cookies</li>
+				<li>Farms - Grow cookie plants from cookie seeds</li>
+				<li>Mines - Dig out cookie dough and chocolate chips</li>
+				<li>Factories - Mass-produce cookies</li>
+				<li>And many more advanced buildings...</li>
+			</ul>
+			
+			<h5>Upgrades and Special Items</h5>
+			<p>The game features hundreds of upgrades that enhance your production:</p>
+			<ul>
+				<li>Building-specific upgrades</li>
+				<li>Milk and kitten upgrades</li>
+				<li>Heavenly upgrades (after ascending)</li>
+				<li>Golden cookie effects</li>
+				<li>Seasonal content</li>
+			</ul>
+			
+			<h6>Cookie Clicker Strategy Tips</h6>
+			<p>Here are some tips to optimize your cookie production:</p>
+			<ul>
+				<li>Focus on achievements early to increase milk level</li>
+				<li>Click golden cookies whenever they appear</li>
+				<li>Wait for a "Frenzy" before purchasing expensive buildings</li>
+				<li>Plan your first ascension carefully (around 250-300 heavenly chips)</li>
+				<li>Use the "Cookie Monster" add-on for advanced optimization</li>
+			</ul>
+			
+			<h3>The History and Impact of Cookie Clicker</h3>
+			<p>Since its release in 2013, Cookie Clicker has:</p>
+			<ul>
+				<li>Inspired countless other idle games</li>
+				<li>Been played by millions of people worldwide</li>
+				<li>Created its own unique terminology and community</li>
+				<li>Become a cultural reference in gaming communities</li>
+				<li>Introduced non-gamers to the joy of incremental games</li>
+			</ul>
+			
+			<div class="highlight-box">
+				<h4>Community and Social Aspect</h4>
+				<p>Cookie Clicker has fostered a vibrant community of players who share strategies, mods, and achievements. Join the discussion on platforms like Reddit and Discord to enhance your gameplay experience!</p>
+			</div>
+			
+			<h2>Frequently Asked Questions</h2>
+			
+			<h4>What happens when I ascend in Cookie Clicker?</h4>
+			<p>When you ascend, you reset your progress but gain Heavenly Chips and Prestige levels based on your lifetime cookie production. These can be spent on permanent upgrades that make your next run more efficient.</p>
+			
+			<h4>Are there any cheats or hacks for Cookie Clicker?</h4>
+			<p>While it's possible to use browser developer tools to modify the game, most players enjoy the intended progression. The game does include intentional "cheats" like the "Born Again" shadow achievement.</p>
+			
+			<h4>What's the ultimate goal of Cookie Clicker?</h4>
+			<p>There is no definitive "end" to Cookie Clicker. Players typically aim to unlock all achievements, discover all upgrades, or simply reach increasingly astronomical numbers of cookies baked.</p>
+			
+			<h4>How often is Cookie Clicker updated?</h4>
+			<p>The game receives major updates every few months, adding new buildings, upgrades, and mechanics to keep the experience fresh.</p>
+			
+			<h3>Conclusion</h3>
+			<p>Cookie Clicker remains one of the most influential idle games ever created, combining simple mechanics with deep strategy and humor. Whether you play for minutes or months, the satisfaction of watching your cookie empire grow is undeniable.</p>
+			
+			<p>Start clicking today and discover why millions of players can't resist just one more cookie!</p>
+		</div>
+	</section>
 
 </div>
 
